@@ -1,0 +1,65 @@
+*{
+    margin:0;
+}
+.container {
+    display: grid; 
+    grid-template-columns: repeat(12, minmax(100px, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+    margin: 0;
+    padding: 0;
+    grid-gap: 20px;  
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 1/ -1;
+    align-items: center;
+    display: flex;
+    position: sticky; /*This makes the header stck to its position on the screen and will move down with the screen*/
+}
+
+.sc{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.sc1{
+    grid-row: 2 / 10;
+    grid-column: 1 / 7;   
+}
+
+.sc2{
+    grid-row: 2 / 18;
+    grid-column: 7 / -1;
+}
+
+.sc3{
+    grid-row: 10 / 26;
+    grid-column: 1 / 7;   
+}
+
+.sc4{
+    grid-row: 18 / 26;
+    grid-column: 7 / -1;
+}
+
+.mainimg{
+    grid-row: 2 / 12;
+    grid-column: 1 / 7;
+}
+
+.maintext{
+    grid-row: 2 / 12;
+    grid-column: 7 / -1;
+}
+
+.slideshow-container{
+    grid-row: 2 / 6;
+    grid-column: 1 / -1;
+}
+
+.dots{
+    grid-row: 6 / 7;
+    grid-column: 6 / 8;
+}
