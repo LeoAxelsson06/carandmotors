@@ -5,6 +5,7 @@
 
 body{
     background: url(../img/carbonfibrebackground.webp);
+    background-attachment: fixed;
 }
 
 header {
@@ -86,6 +87,10 @@ iframe[seamless] {
     display: block;
   }
 
+  h1{
+    display: none;
+  }
+
   .sc{
     border-radius: 200px;
     font-size: 80px;
@@ -93,27 +98,32 @@ iframe[seamless] {
 
   .sc1 {
     background: url(../img/engine.webp);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .sc2 {
     background: url(../img/fordgt40.webp);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #333;
   }
   .sc3 {
     background: url(../img/mclarenp1.webp);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #333;
   }
   .sc4 {
     background: url(../img/turbo.webp);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #333;
   }
+
 
   h2{
     font-size: 80px;
@@ -137,7 +147,10 @@ iframe[seamless] {
   }
 
   .mainimg{
+    background: url("../img/turbo.webp");
     border-radius: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .sidepagetitle{
@@ -145,6 +158,11 @@ iframe[seamless] {
   }
 
   p{
+    color: white;
+    font-size: 20px;
+  }
+
+  li{
     color: white;
     font-size: 20px;
   }
@@ -240,4 +258,22 @@ iframe[seamless] {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 1020px){/*If the screen gets smaller than the defined width the already stated grid code will be overwritten by the grid cde below the statement. If there is no code to over write the old code, the old code will be active*/
+
+  .sc{
+    border-radius: 100px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  .mainimg{
+    background-position: center;
+    border-radius: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
