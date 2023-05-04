@@ -1,19 +1,12 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body{
     background: url(../img/carbonfibrebackground.webp);
-    background-attachment: fixed;
+    background-attachment: fixed;      /*This makes the background stay still while the other elements moven ontop of it.*/
 }
 
-header {
-    background-color: #333;
-}
+/*  Iframe header   */
 
-iframe:focus {
-  outline: none;
+iframe:focus { 
+  outline: none;    /*This hides th, other standard, outline of te iframe*/
 }
 
 iframe[seamless] {
@@ -23,7 +16,7 @@ iframe[seamless] {
 /* The navigation menu */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
     
   }
   
@@ -87,42 +80,47 @@ iframe[seamless] {
     display: block;
   }
 
+
   h1{
-    display: none;
+    display: none;  /*This hides the h1 element which did not really fit in but needs to be there to allow the search engines to discover my website more easily, when I actually upload it.*/
   }
+
+  /*  Sections    */
+      /*  Background and generall  */
 
   .sc{
     border-radius: 200px;
     font-size: 80px;
+    text-decoration: none;
   }
 
   .sc1 {
     background: url(../img/engine.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
   }
   .sc2 {
     background: url(../img/fordgt40.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #333;
   }
   .sc3 {
     background: url(../img/mclarenp1.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #333;
   }
   .sc4 {
     background: url(../img/turbo.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #333;
+
   }
+
+  .sc5{
+    background-color: transparent;
+  }
+
+      /*  Text   */
 
 
   h2{
@@ -146,12 +144,21 @@ iframe[seamless] {
     color: black;
   }
 
+  .sc5text{
+    color: rgb(0, 128, 255);
+  }
+
+  /* Turbo page   */
+      /*  Background  */
+
   .mainimg{
     background: url("../img/turbo.webp");
     border-radius: 150px;
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+      /*  Text  */
 
   .sidepagetitle{
     color: white;
@@ -166,6 +173,8 @@ iframe[seamless] {
     color: white;
     font-size: 20px;
   }
+
+  /*  P1 page   */
 
   * {box-sizing:border-box}
 
@@ -263,7 +272,7 @@ iframe[seamless] {
 @media only screen and (max-width: 1020px){/*If the screen gets smaller than the defined width the already stated grid code will be overwritten by the grid cde below the statement. If there is no code to over write the old code, the old code will be active*/
 
   .sc{
-    border-radius: 100px;
+    border-radius: 100px; /*Make the sections less rounded*/
   }
 
   h2{
@@ -273,7 +282,5 @@ iframe[seamless] {
   .mainimg{
     background-position: center;
     border-radius: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
