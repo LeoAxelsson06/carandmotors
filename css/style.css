@@ -6,7 +6,8 @@ body{
 /*  Iframe header   */
 
 iframe:focus { 
-  outline: none;    /*This hides th, other standard, outline of te iframe*/
+  outline: none;    /*This hides the, other standard, outline of te iframe*/
+  
 }
 
 iframe[seamless] {
@@ -129,7 +130,7 @@ iframe[seamless] {
 
   .sc1text{
     color: black;
-    text-shadow: 5px;
+    text-shadow: 5%;
   }
 
   .sc2text{
