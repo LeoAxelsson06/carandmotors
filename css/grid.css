@@ -64,6 +64,7 @@ header {
 }
 
 .maintext{
+    margin: 10px;
     grid-row: 2 / 12;
     grid-column: 7 / -1;
 }

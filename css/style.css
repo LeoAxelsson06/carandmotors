@@ -7,7 +7,6 @@ body{
 
 iframe:focus { 
   outline: none;    /*This hides the, other standard, outline of te iframe*/
-  
 }
 
 iframe[seamless] {
@@ -129,8 +128,7 @@ iframe[seamless] {
   }
 
   .sc1text{
-    color: black;
-    text-shadow: 5%;
+    color: red;
   }
 
   .sc2text{
@@ -142,7 +140,7 @@ iframe[seamless] {
   }
 
   .sc4text{
-    color: black;
+    color: rgb(0, 174, 255);
   }
 
   .sc5text{
@@ -155,6 +153,7 @@ iframe[seamless] {
   .mainimg{
     background: url("../img/turbo.webp");
     border-radius: 150px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
